@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color:  #535F48;
+}
+.header{
+   justify-content: center;
+}
+.active{
+    color: #6EB92D;
+}
+nav{
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+ nav ul{
+     width: 100%;
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ nav li{
+     height: 50px;
+ }
+ nav a{
+     height: 100%;
+     padding: 0 30px;
+     text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     transition: 0.2s ease-in;
+ }
+ nav a:hover{
+    color: #6EB92D;
+}
+ nav li:first-child{
+    margin-right: auto;
+ }
+ .sidebar{
+     top: 0;
+     right: 0;
+     height: 100vh;
+     width: 250px;
+     z-index:999 ;
+     background-color:#555a53;
+     backdrop-filter: blur(10px);
+     display: none;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     border-radius: 20px;
+ }
+ .sidebar li{
+     width: 100%;
+ }
+ .sidebar a{
+     width: 100%;
+ }
+ .don {
+    background-color: #6EB92D;
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+}
+.don:hover{
+    background-color: white;
+    color: #6EB92D;
+}
+.menu-button{
+    display: none;
+}
+ @media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+       
+}
+.footl{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.pic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 15px;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+}
+
+ .carouselslide{
+     margin-top: 50px;
+ }
+ footer{
+    background-color: #6EB92D;
+    height: 50%;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 60%;
+}
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicons a:hover i{
+   color: white;
+   transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+}
+.footerNav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+.footerBottom select{
+        display: flex;
+        background: none;
+        border: none;
+        justify-content: center;
+        display: block;
+        width: 100px;
+        justify-content: center;
+        background: none;
+        margin-top: 80px;
+        margin-left: 300px;
+        border:none;
+        margin-right: 20px;
+      
+}
+.footlogo{
+    display: flex;
+    justify-content: center;
+}
